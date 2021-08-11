@@ -11,10 +11,15 @@
     background-position: center;
     background-size: cover;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/section1/bg-hero-mobile.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-hero-mobile.jpg);
   }
+}
 
+.section1 {
   &__title {
     margin-bottom: 30px;
     font-weight: 900;
@@ -29,8 +34,11 @@
   @media screen and (min-width: 768px) {
     margin: 0 auto;
     &__bg-img-1 {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/section1/bg-hero-tablet.jpg');
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg-hero-tablet.jpg);
     }
   }
 
@@ -44,8 +52,11 @@
     }
 
     &__bg-img-1 {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/section1/bg-hero-desk.jpg');
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg-hero-desk.jpg);
     }
   }
 }
