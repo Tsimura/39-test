@@ -1,4 +1,51 @@
-.section1__text {
-  font-size: 20px;
-  line-height: 1.09;
+.section1 {
+  &__text {
+    font-size: 20px;
+    line-height: 1.09;
+  }
+
+  &__bg-img-1 {
+    padding: 15px 15px;
+
+    background: #c4c4c4;
+    background-position: center;
+    background-size: cover;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/section1/bg-hero-mobile.jpg');
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    &__bg-img-1 {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/section1/bg-hero-tablet.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+
+    &__title {
+      font-size: 44px;
+      line-height: 1.55;
+    }
+
+    &__bg-img-1 {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/section1/bg-hero-desk.jpg');
+    }
+  }
 }
