@@ -1,0 +1,18 @@
+@mixin title-h2(
+  $jc: center,
+  $mb: 50px,
+  $fs: 36px,
+  $fw: 700,
+  $l-space: 0.03em,
+  $t-align: center,
+  $color: green
+) {
+  justify-content: $jc;
+  margin-bottom: $mb;
+  font-size: $fs;
+  font-weight: $fw;
+
+  letter-spacing: $l-space;
+  text-align: $t-align;
+  color: $color;
+}

@@ -1,3 +1,7 @@
+@import "./utils/mixin";
+.section1__title2 {
+  @include title-h2();
+}
 .section1 {
   &__text {
     font-size: 20px;
