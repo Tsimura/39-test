@@ -15,8 +15,39 @@
         <button type="button" class="button">
           mixin-image
         </button>
+        </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="
+                                ./images/content-img/img-desk.webp    1x,
+                                ./images/content-img/img-desk@2x.webp 2x
+                              " type="image/webp" />
+            <source media="(min-width: 1200px)" srcset="
+                                ./images/content-img/img-desk.jpg    1x,
+                                ./images/content-img/img-desk@2x.jpg 2x
+                              " type="image/jpeg" />
         
-      </div>
+            <source media="(min-width: 768px)" srcset="
+                                ./images/content-img/img-tablet.webp    1x,
+                                ./images/content-img/img-tablet@2x.webp 2x
+                              " type="image/webp" />
+            <source media="(min-width: 768px)" srcset="
+                                ./images/content-img/img-tablet.jpg    1x,
+                                ./images/content-img/img-tablet@2x.jpg 2x
+                              " type="image/jpeg" />
+        
+            <source media="(max-width: 767px)" srcset="
+                                ./images/content-img/img-mobile.webp    1x,
+                                ./images/content-img/img-mobile@2x.webp 2x
+                              " type="image/webp" />
+            <source media="(max-width: 767px)" srcset="
+                               ./images/content-img/img-mobile.jpg     1x,
+                                ./images/content-img/img-mobile@2x.jpg 2x
+                              " type="image/jpeg" />
+        
+            <img class="img" src="#" alt="монитор ноутбука" />
+          </picture>
+        
+      
     </div>
   </body>
 </html>
