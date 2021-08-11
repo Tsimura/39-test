@@ -1,0 +1,16 @@
+@mixin retina(
+  $ratio: 2,
+  $dpi: 192dpi,
+  $image: "../images/section1/bg-hero-mobile@2x.jpg",
+  $width: 480px
+) {
+  @media screen and (min-device-pixel-ratio: $ratio) and (min-width: $width),
+    screen and (min-resolution: $dpi) and (min-width: $width),
+    screen and (min-resolution: 2dppx) and (min-width: $width) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url($image);
+  }
+}
